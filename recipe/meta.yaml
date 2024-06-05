@@ -1,5 +1,5 @@
 {% set name = "trl" %}
-{% set version = "0.8.6" %}
+{% set version = "0.9.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/huggingface/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 1e57f23ae58a088a627773a821e6337285798fac1e432b370e335c8cf894962e
+  sha256: 32843ddd9461b186da97055e0833902959656d3680c27c71b83f5636b2ece9c7
 
 build:
   noarch: python
