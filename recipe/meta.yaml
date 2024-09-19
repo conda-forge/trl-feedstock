@@ -1,5 +1,5 @@
 {% set name = "trl" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/huggingface/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: c3af663e52a9189acbd2497f53563808f1cfbd426b30b43ac255a6263544e808
+  sha256: fc54b8126fcae7aa800121c1be104f0055680fdb39f997520ed1c22922226109
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.7
     - pytorch >=1.4.0
-    - transformers >=4.31.0
+    - transformers >=4.40.0
     - numpy >=1.18.2
     - accelerate
     - datasets
