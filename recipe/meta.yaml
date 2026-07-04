@@ -30,6 +30,7 @@ requirements:
     - accelerate >=1.4.0
     - datasets >=4.7.0
     - tyro >=0.5.11
+    - typer
 
 test:
   imports:
