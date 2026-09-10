@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: trl
-  version: 1.12.0
+  version: 1.13.0
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://github.com/huggingface/${{ name }}/archive/v${{ version }}.tar.gz
-  sha256: 44a719be3003933afb951bacd9fc8e4dae74705e8c00e2118c5f4978317e448d
+  sha256: bee1276495123e3234ffddf768ac6eea3e53ca8be016ab7894302065254486ca
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -25,16 +25,10 @@ requirements:
   run:
     - jinja2
     - packaging >20.0
-    - rich
     - python >=${{ python_min }}
-    - pytorch >=1.4.0
     - transformers >=4.56.2
-    - numpy >=1.18.2
     - accelerate >=1.4.0
     - datasets >=4.7.0
-    - tyro >=0.5.11
-    - typer
-
 tests:
   - python:
       imports:
@@ -42,7 +36,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}
-        - "*"
+        - '*'
 
 about:
   summary: Train transformer language models with reinforcement learning.
