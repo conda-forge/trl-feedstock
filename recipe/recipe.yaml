@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: trl
-  version: 1.17.0
+  version: "1.17.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/huggingface/${{ name }}/archive/v${{ version }}.tar.gz
-  sha256: 5edbb8c5ed4f7c43eb09a8b1b6f1b6b83d645b00018a8a29bc2f663fb2acb5a5
+  sha256: 7943beed446f3da319189ab658c31336af81140939367806b1ff630ea85be734
 
 build:
   number: 0
